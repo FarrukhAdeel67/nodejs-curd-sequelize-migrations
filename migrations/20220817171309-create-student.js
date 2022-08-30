@@ -1,7 +1,5 @@
 'use strict';
 const {DataTypes} = require('sequelize');
-const moment  = require("moment");
-const bcrypt = require("bcryptjs");
 const table = 'students'
 module.exports = {
    up: async function (queryInterface, Sequelize) {

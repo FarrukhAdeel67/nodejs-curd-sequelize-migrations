@@ -18,6 +18,16 @@ const  Students = sequelize.define(tableName,{
     },password:{
         type: DataTypes.STRING,
         allowNull: false,
+    },
+    gender:{
+        type:DataTypes.ENUM("Male", "Female"),
+        allowNull:false,
+        defaultValue:"male",
+    },
+    address:{
+        type: DataTypes.TEXT,
+        allowNull:false,
+        defaultValue:"Peshawar",
     },createdAt:{
         type:DataTypes.INTEGER,
         allowNull: false,
